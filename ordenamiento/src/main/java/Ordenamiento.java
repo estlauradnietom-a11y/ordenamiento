@@ -19,9 +19,8 @@ public class Ordenamiento {
 
         //  datos por aleatoreo 
         
-        for (int i = 0; i < n; i++) {
-            System.out.print("Ingrese el número " + i + ": ");
-            arr[i] = sc.nextInt();
+               for (int i = 0; i < n; i++) {
+            arr[i] = rand.nextInt(201) - 100; 
         }
 
         ordenar(arr);
