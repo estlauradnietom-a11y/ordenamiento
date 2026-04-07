@@ -1,6 +1,17 @@
+import java.util.*;
+
 public class Ordenamiento {
     public static void main(String[] args) {
-        int arr[] = {5, 2, 11, -8, 115, 56, -3};
+        
+         Scanner sc = new Scanner(System.in);
+        
+         System.out.println("De que tamaño sera el arreglo?");
+         int n = sc.nextInt();
+         
+
+        
+        
+        
         ordenar(arr);
         System.out.println(java.util.Arrays.toString(arr));
     }
