@@ -8,11 +8,14 @@ public class Ordenamiento {
          System.out.println("De que tamaño sera el arreglo?");
          int n = sc.nextInt();
          
-
+         int arr[] = new int[n];
+         
+         
         
         
         
         ordenar(arr);
+        
         System.out.println(java.util.Arrays.toString(arr));
     }
     private static void ordenar(int v[]) {
