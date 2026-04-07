@@ -67,7 +67,20 @@ public class Ordenamiento {
 
     // Método de ordenamiento por inserción
     // Es un algoritmo que ordena elementos uno por uno, comparando cada nuevo dato con los anteriores e insertándolo en su posición correcta
+    private static void ordenarInsercion(int[] v) {
+        for (int i = 1; i < v.length; i++) {
+            int clave = v[i];
+            int j = i - 1;
 
+            while (j >= 0 && v[j] > clave) {
+                v[j + 1] = v[j];
+                j--;
+            }
+
+            v[j + 1] = clave;
+        }
+    }
+}
 
 // para tener en cuenta 
 // La diferencia clave es que la burbuja intercambia elementos adyacentes repetidamente hasta que los más grandes "flotan" al final,
